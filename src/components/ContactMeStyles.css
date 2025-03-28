@@ -1,0 +1,187 @@
+.contact {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.max-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* ========== Left Column ========== */
+.column.left {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.column.left .text {
+    font-size: 24px;
+    font-weight: 600;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 60px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 16px;
+    color: #aaa;
+    margin-left: 60px;
+}
+
+/* ========== Right Column (Form) ========== */
+.column.right {
+    flex: 1 1 45%;
+}
+
+.right form .text {
+    font-size: 24px;
+    font-weight: 600;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.right form .fields {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.field {
+    flex: 1;
+}
+
+.field input,
+.textarea textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.field input:focus,
+.textarea textarea:focus {
+    border-color: crimson;
+    outline: none;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.textarea textarea {
+    height: 120px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.button-area {
+    margin-top: 15px;
+}
+
+.button-area button {
+    background: crimson;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-area button:hover {
+    background: transparent;
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 960px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .right form .fields {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .button-area {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .text,
+    .right form .text {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .button-area button {
+        width: 100%;
+    }
+}

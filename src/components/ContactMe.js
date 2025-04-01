@@ -1,6 +1,6 @@
 import "./ContactMeStyles.css";
 import React from 'react'
-import {FaHome, FaHandPointRight, FaPhone,FaMailBulk, FaInstagram, FaFacebook, FaTwitter, FaLinkedin} from "react-icons/fa";
+import {FaHome, FaHandPointRight, FaMailBulk, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 
 const ContactMe = () => {
